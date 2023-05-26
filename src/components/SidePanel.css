@@ -1,9 +1,17 @@
 .side-panel {
   background-color: #034561;
   color: white;
-  height: 100vh;
-  width: 14rem;
-  padding-top: 2rem;
+  width: 16rem;
+  position: fixed;
+  left: 0px;
+  height: 100%;
+  transition: left 0.5s;
+}
+.panel-open {
+  left: 0;
+}
+.panel-closed {
+  left: -16rem;
 }
 .panel-nav li {
   list-style: none;
