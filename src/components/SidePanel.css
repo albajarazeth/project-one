@@ -1,5 +1,6 @@
 .side-panel {
   background-color: #034561;
+  padding-top: 1.5rem;
   color: white;
   width: 16rem;
   position: fixed;
@@ -13,16 +14,32 @@
 .panel-closed {
   left: -16rem;
 }
+ul {
+  padding: 0;
+  margin: 0;
+}
 .panel-nav li {
   list-style: none;
   padding-bottom: 1rem;
+  cursor: pointer;
 }
 .nav-link {
   font-weight: bold;
   display: flex;
   gap: 1rem;
-  padding-bottom: 2rem;
+  cursor: pointer;
+  padding-left: 3rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.3rem;
+  -webkit-transition: opacity 400ms linear;
+  -moz-transition: opacity 400ms linear;
+  -o-transition: opacity 400ms linear;
+  -ms-transition: opacity 400ms linear;
+  transition: opacity 400ms linear;
 }
 .nav-icon {
   font-size: 1.5rem;
+}
+.nav-link:hover {
+  opacity: 0.5;
 }
