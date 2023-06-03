@@ -1,0 +1,15 @@
+.main-nav {
+  background-color: #034561;
+  padding-top: 0.5rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+.panel-btn {
+  background-color: transparent;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: white;
+}

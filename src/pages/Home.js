@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import SidePanel from "../components/SidePanel";
 import MainNav from "../components/MainNav";
+
 import "./Home.css";
 
 const Home = () => {
   const [showMenu, setShowMenu] = useState(true);
-  const projects = ["preoject 1", "project 2", "project 3"];
-  const days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"];
+  const projects = ["preoject 1", "project 2"];
+  const days = ["Monday", "Tuesday"];
 
   const toggleMenu = () => {
     setShowMenu((prev) => !prev);
@@ -14,7 +15,7 @@ const Home = () => {
 
   return (
     <section className="home-container">
-      <button onClick={toggleMenu}>---</button>
+      <MainNav toggleMenu={toggleMenu} />
       {/* {showMenu && <SidePanel />} */}
       <SidePanel toggle={showMenu} />
       <section className="home-content">
